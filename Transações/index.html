@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Transações</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Controle de Transações</h1>
+
+    <div id="transaction-form">
+        <input type="text" id="description" placeholder="Descrição da Transação">
+        <input type="number" id="amount" placeholder="Valor da Transação">
+        <button id="add-transaction">Adicionar </button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody id="transaction-list">
+            <!-- A lista de transações será preenchida dinamicamente com JavaScript -->
+        </tbody>
+    </table>
+
+    <div id="balance">
+        <p>Saldo Total: <span id="total-balance">0.00</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
